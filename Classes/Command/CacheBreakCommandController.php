@@ -1,5 +1,5 @@
 <?php
-namespace Mindscreen\CacheBreak\Command;
+namespace Mindscreen\Flow\CacheBreak\Command;
 
 /*                                                                        *
  * This script belongs to the Flow framework.                             *
@@ -8,17 +8,15 @@ namespace Mindscreen\CacheBreak\Command;
  * the terms of the MIT license.                                          *
  *                                                                        */
 
-use Mindscreen\CacheBreak\Service\CacheBreakService;
+use Mindscreen\Flow\CacheBreak\Service\CacheBreakService;
 use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Cli\CommandController;
-use TYPO3\Fluid\Service;
 
 /**
  * Command controller for breaking resource caches
  *
  * @Flow\Scope("singleton")
  */
-class CacheBreakCommandController extends CommandController
+class CacheBreakCommandController extends \TYPO3\Flow\Cli\CommandController
 {
 
     /**

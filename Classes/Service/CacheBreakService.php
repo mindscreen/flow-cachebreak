@@ -1,5 +1,5 @@
 <?php
-namespace Mindscreen\CacheBreak\Service;
+namespace Mindscreen\Flow\CacheBreak\Service;
 
 /*                                                                        *
  * This script belongs to the Flow framework.                             *
@@ -10,7 +10,6 @@ namespace Mindscreen\CacheBreak\Service;
 
 use TYPO3\Flow\Annotations as Flow;
 use TYPO3\Flow\Cli\CommandController;
-use TYPO3\Fluid\Service;
 
 /**
  * Command controller for Fluid documentation rendering

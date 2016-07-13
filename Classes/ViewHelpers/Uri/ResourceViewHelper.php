@@ -1,5 +1,5 @@
 <?php
-namespace Mindscreen\Flow\CacheBreak\ViewHelpers;
+namespace Mindscreen\Flow\CacheBreak\ViewHelpers\Uri;
 
 /*                                                                        *
  * This script belongs to the Flow framework.                             *
@@ -8,8 +8,9 @@ namespace Mindscreen\Flow\CacheBreak\ViewHelpers;
  * the terms of the MIT license.                                          *
  *                                                                        */
 
-use Mindscreen\CacheBreak\Service\CacheBreakService;
+use Mindscreen\Flow\CacheBreak\Service\CacheBreakService;
 use TYPO3\Flow\Annotations as Flow;
+use TYPO3\Flow\Resource\Resource;
 
 /**
  * A view helper for creating URIs to resources.
@@ -57,6 +58,11 @@ class ResourceViewHelper extends \TYPO3\Fluid\ViewHelpers\Uri\ResourceViewHelper
      * @var CacheBreakService
      */
     protected $cacheBreakingService;
+
+    /**
+     * @var bool
+     */
+    protected $enabled = true;
 
     /**
      * Render the URI to the resource. The filename is used from child content.
