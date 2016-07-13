@@ -60,11 +60,6 @@ class ResourceViewHelper extends \TYPO3\Fluid\ViewHelpers\Uri\ResourceViewHelper
     protected $cacheBreakingService;
 
     /**
-     * @var bool
-     */
-    protected $enabled = true;
-
-    /**
      * Render the URI to the resource. The filename is used from child content.
      *
      * @param string $path The location of the resource, can be either a path relative to the Public resource directory of the package or a resource://... URI
@@ -78,10 +73,7 @@ class ResourceViewHelper extends \TYPO3\Fluid\ViewHelpers\Uri\ResourceViewHelper
     public function render($path = null, $package = null, Resource $resource = null, $localize = true)
     {
         $uri = parent::render($path, $package, $resource, $localize);
-        if ($this->enabled) {
-            $cacheBreakingString = $this->cacheBreakingService->get();
-            $uri .= '?' . $cacheBreakingString;
-        }
+        $uri .= '?' . $this->cacheBreakingService->get();
         return $uri;
     }
 }
