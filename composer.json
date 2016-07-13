@@ -1,0 +1,20 @@
+{
+  "name": "mindscreen/flow-cachebreak",
+  "type": "typo3-flow-package",
+  "description": "Cache breaking functionality for static resources in Flow",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thomas Heilmann",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "typo3/flow": "3.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mindscreen\\Flow\\CacheBreak\\": "Classes/"
+    }
+  }
+}
