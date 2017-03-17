@@ -8,8 +8,8 @@ namespace Mindscreen\Flow\CacheBreak\Service;
  * the terms of the MIT license.                                          *
  *                                                                        */
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Cli\CommandController;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Cli\CommandController;
 
 /**
  * Command controller for Fluid documentation rendering
@@ -27,7 +27,7 @@ class CacheBreakService
     const STORAGE_KEY = 'cache_breaking_string';
 
     /**
-     * @var \TYPO3\Flow\Cache\Frontend\StringFrontend
+     * @var \Neos\Cache\Frontend\StringFrontend
      * @Flow\Inject
      */
     protected $storage;
