@@ -1,6 +1,6 @@
 {
   "name": "mindscreen/flow-cachebreak",
-  "type": "neos-flow-package",
+  "type": "neos-package",
   "description": "Cache breaking functionality for static resources in Flow",
   "license": "MIT",
   "authors": [
