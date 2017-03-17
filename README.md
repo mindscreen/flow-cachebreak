@@ -15,7 +15,7 @@ Replace the default Flow resource.uri ViewHelper with the ViewHelper provided by
   that should get cache breaking capability:
   
 ```html
-<link rel="stylesheet" href="{cb:uri.resource(path: 'Build/Styles/', package: 'My.Package')}Style.css" />
+<link rel="stylesheet" href="{cb:uri.resource(path: 'Build/Styles/Style.css', package: 'My.Package')}" />
 ```
 
 You can set far future expires headers for these resources, as the the ViewHelper will add a cache breaking GET 
