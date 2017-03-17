@@ -8,8 +8,8 @@ namespace Mindscreen\Flow\CacheBreak\Service;
  * the terms of the MIT license.                                          *
  *                                                                        */
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Cli\CommandController;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Cli\CommandController;
 
 /**
  * Command controller for Fluid documentation rendering

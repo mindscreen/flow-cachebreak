@@ -9,14 +9,14 @@ namespace Mindscreen\Flow\CacheBreak\Command;
  *                                                                        */
 
 use Mindscreen\Flow\CacheBreak\Service\CacheBreakService;
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Annotations as Flow;
 
 /**
  * Command controller for breaking resource caches
  *
  * @Flow\Scope("singleton")
  */
-class CacheBreakCommandController extends \TYPO3\Flow\Cli\CommandController
+class CacheBreakCommandController extends \Neos\Flow\Cli\CommandController
 {
 
     /**

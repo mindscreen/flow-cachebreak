@@ -1,4 +1,4 @@
 'Mindscreen_Flow_CacheBreak':
-  frontend: TYPO3\Flow\Cache\Frontend\StringFrontend
-  backend: TYPO3\Flow\Cache\Backend\SimpleFileBackend
+  frontend: Neos\Flow\Cache\Frontend\StringFrontend
+  backend: Neos\Flow\Cache\Backend\SimpleFileBackend
   persistent: true

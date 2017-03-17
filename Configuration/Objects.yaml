@@ -2,7 +2,7 @@ Mindscreen\Flow\CacheBreak\Service\CacheBreakService:
   properties:
     storage:
       object:
-        factoryObjectName: TYPO3\Flow\Cache\CacheManager
+        factoryObjectName: Neos\Flow\Cache\CacheManager
         factoryMethodName: getCache
         arguments:
           1:
