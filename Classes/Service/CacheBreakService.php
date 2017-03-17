@@ -27,7 +27,7 @@ class CacheBreakService
     const STORAGE_KEY = 'cache_breaking_string';
 
     /**
-     * @var \TYPO3\Flow\Cache\Frontend\StringFrontend
+     * @var \Neos\Cache\Frontend\StringFrontend
      * @Flow\Inject
      */
     protected $storage;

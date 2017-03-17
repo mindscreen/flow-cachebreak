@@ -51,7 +51,7 @@ use Neos\Flow\ResourceManagement\PersistentResource;
  *
  * @api
  */
-class ResourceViewHelper extends \Neos\Fluid\ViewHelpers\Uri\ResourceViewHelper
+class ResourceViewHelper extends \Neos\FluidAdaptor\ViewHelpers\Uri\ResourceViewHelper
 {
     /**
      * @Flow\Inject

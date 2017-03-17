@@ -1,4 +1,4 @@
 'Mindscreen_Flow_CacheBreak':
-  frontend: Neos\Flow\Cache\Frontend\StringFrontend
-  backend: Neos\Flow\Cache\Backend\SimpleFileBackend
+  frontend: Neos\Cache\Frontend\StringFrontend
+  backend: Neos\Cache\Backend\SimpleFileBackend
   persistent: true
